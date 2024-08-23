@@ -1,6 +1,6 @@
 # Eco-BillOptimizer
 
-**Why Eco_Bill Optimizer:**
+**What is Eco_Bill Optimizer and Why it is ?**
 
 The motivation behind developing this code lies in the growing need for efficient energy management and cost optimization in both residential and commercial settings. In an era where energy consumption directly impacts not only financial expenses but also environmental sustainability, understanding and managing electricity usage has never been more crucial. By automating the extraction and analysis of data from electricity bills, this code empowers users to gain detailed insights into their energy consumption patterns, billing inconsistencies, and potential areas for cost-saving.
 
