@@ -1,15 +1,17 @@
 # Eco-BillOptimizer
 
-# Why Eco_Bill Optimizer:
+**Why Eco_Bill Optimizer:**
 
 The motivation behind developing this code lies in the growing need for efficient energy management and cost optimization in both residential and commercial settings. In an era where energy consumption directly impacts not only financial expenses but also environmental sustainability, understanding and managing electricity usage has never been more crucial. By automating the extraction and analysis of data from electricity bills, this code empowers users to gain detailed insights into their energy consumption patterns, billing inconsistencies, and potential areas for cost-saving.
 
 With the ability to analyze historical billing data, consumers and businesses can identify trends such as peak usage times, excessive charges, or discrepancies in billing. This level of analysis enables informed decision-making, allowing users to adopt energy-saving measures, optimize their electricity usage, and potentially switch to more cost-effective energy plans. Moreover, by visualizing this data through platforms like Power BI and Tableau, users can easily monitor and track their progress in reducing energy consumption, ultimately contributing to both financial savings and a smaller carbon footprint.
 The code provided is designed to automate the extraction of text from images, specifically bill documents stored in a Google Drive folder, and then process that text to extract relevant fields related to electricity billing. This workflow is particularly useful for creating structured datasets that can be further analyzed using tools like Power BI and Tableau.
 
-# Technical Follow ups:
+**Technical Follow ups:**
 
 The process begins with the installation of necessary libraries such as Tesseract OCR, which is responsible for optical character recognition (OCR) of the text within the images. The Google Colab environment is used, and the Google Drive is mounted to access the images stored in a specified folder. The first part of the code focuses on reading these images, processing each one to extract the text content, and saving this raw extracted text into a CSV file. Each image in the folder is read using the Python Imaging Library (PIL), and the text is extracted using Tesseract OCR. The results are stored in a structured CSV format, with each row representing a document and containing the file name and the extracted text.
+
+Link to dataset - https://drive.google.com/drive/folders/1kKUqWCOLKY7g_NGy1xJI4qh7_noA2Cqs?usp=drive_link
 
 Once the raw text data is saved, the second part of the code comes into play. This portion of the script is responsible for post-processing the extracted text to correct common OCR errors and to identify specific fields relevant to electricity billing, such as meter number, bill number, bill date, and various charges. Regular expressions are used to accurately locate and extract these fields from the text, ensuring that the data is organized in a structured manner. Corrections are applied to the text to address common OCR misinterpretations, improving the accuracy of the extracted data.
 
