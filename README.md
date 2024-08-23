@@ -1,4 +1,4 @@
-# Reduction-of-Electricity-bills
+# Eco-BillOptimizer
 Project :- Reduction of Electricity bills by analysing the consumption and bills for last 1 year.
 
 Collect eBills from last 1 year
