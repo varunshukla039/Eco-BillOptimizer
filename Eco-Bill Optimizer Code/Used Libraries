@@ -1,0 +1,29 @@
+# Install necessary libraries
+!pip install pytesseract
+!apt-get install -y libtesseract-dev
+!pip install Pillow
+!apt-get update
+!apt-get install -y tesseract-ocr
+!pip install pandas
+
+# Import libraries
+import pytesseract
+from PIL import Image
+import os
+import csv
+from google.colab import drive
+import pandas as pd
+import re
+Libraries Used: Pytesseract: This is a Python wrapper for Google's Tesseract-OCR engine. It is used for optical character recognition (OCR), which allows the extraction of text from images. Pytesseract is essential for converting the textual content within scanned documents or image files into a machine-readable format.
+
+PIL (Python Imaging Library) / Pillow: This library is used for opening, manipulating, and saving image files in various formats. In this code, it works alongside Pytesseract to handle the image files from which text is extracted.
+
+PyMuPDF (fitz): PyMuPDF is a Python binding for MuPDF, a lightweight PDF viewer, and toolkit. It's used in this code to process PDF documents, extracting text either directly or through OCR when the text is embedded in images within the PDF.
+
+Pandas: A powerful data manipulation and analysis library, Pandas is used to handle and process structured data. In this code, Pandas is utilized for loading, processing, and saving the extracted text data into a CSV file format, which is a common data structure for further analysis.
+
+Regular Expressions (re): The re module in Python is used for matching and searching patterns in text. This is crucial for extracting specific fields from the raw OCR output, such as meter numbers, bill dates, and charges, ensuring the data is clean and structured.
+
+CSV: This module is used for reading from and writing to CSV (Comma Separated Values) files. In this code, it facilitates the storage of extracted text data in a structured format that is easy to import into data analysis tools like Power BI and Tableau.
+
+Google Colab and Google Drive Integration: The code is designed to run on Google Colab, a cloud-based platform that provides free access to GPUs and TPUs for machine learning tasks. Google Drive integration allows easy access to datasets stored in the cloud, making the process seamless and scalable.
