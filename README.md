@@ -22,6 +22,8 @@ Regular Expressions (re): The re module in Python is used for matching and searc
 
 CSV: This module is used for reading from and writing to CSV (Comma Separated Values) files. In this code, it facilitates the storage of extracted text data in a structured format that is easy to import into data analysis tools like Power BI and Tableau.
 
+Sweetviz: A Python library for creating visualized, high-density EDA (Exploratory Data Analysis) reports with just a few lines of code. It compares datasets, highlights key insights, and generates interactive HTML reports.
+
 Google Colab and Google Drive Integration: The code is designed to run on Google Colab, a cloud-based platform that provides free access to GPUs and TPUs for machine learning tasks. Google Drive integration allows easy access to datasets stored in the cloud, making the process seamless and scalable.
 
 Tech Stack:
